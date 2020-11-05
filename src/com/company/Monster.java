@@ -5,18 +5,25 @@ public class Monster {
     int attackPoint;
 
 
-    public Monster(){
+    public Monster() {
         lifePoint = 20;
+        attackPoint = 10;
     }
-    public int lifeGauge(int lifePoint){
+
+    public int lifeGauge(int lifePoint) {
         this.lifePoint = lifePoint;
         return lifePoint;
     }
 
-    void monsterAttack(int attackPoint){
+    public int monsterAttack(int attackPoint) {
         this.attackPoint = attackPoint;
-        Armes lighteningStrike = new Armes();
-        lighteningStrike.lightningEffect();
+        return attackPoint;
+    }
+
+    public void armeType(Armes lightening){
+
+
+    }
 
 
         // création de l'arme du sorcier
@@ -29,9 +36,5 @@ public class Monster {
                 lighteningStrike.lightningEffect();
             if (explorer.lifePoint < 0) {
                 break;*/
-            }
 
-        }
-
-    }
 }

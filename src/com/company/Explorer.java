@@ -5,6 +5,7 @@ public class Explorer {
     int attackPoint;
 
 
+
     public Explorer(int eLifePoint, int eAttackPoint) {
         eLifePoint = lifePoint;
         eAttackPoint = attackPoint;
@@ -16,9 +17,13 @@ public class Explorer {
     }
 
 
-    void attackAmount(int attackPoint){
+    public int explorerAttack(int attackPoint){
         this.attackPoint = attackPoint;
+        return attackPoint;
+    }
+    public void weapon(){
 
     }
+
 
 }
