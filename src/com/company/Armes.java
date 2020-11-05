@@ -7,8 +7,9 @@ public class Armes {
     Random randCritick = new Random();
 
     // constructeur arme point d'attaque de base
-    public Armes(){
-        attackPoint = 10;
+    public Armes(int attackPoint){
+        this.attackPoint = attackPoint;
+
     }
     // effet spécial épée
     public boolean sword(){
@@ -39,6 +40,11 @@ public class Armes {
             addDamage = 10;
             return addDamage;
         }else
+        return addDamage;
+    }
+    // effet spécial flasque d'eau
+    public int waterFlaskEffect(){
+        int addDamage =2;
         return addDamage;
     }
 }

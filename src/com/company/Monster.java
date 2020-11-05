@@ -1,29 +1,38 @@
 package com.company;
 
+import java.util.Random;
+
 public class Monster {
     int lifePoint;
     int attackPoint;
+    Armes axe;
+    Armes lightening;
+    Random randTypeMonster = new Random();
 
 
-    public Monster() {
-        lifePoint = 20;
-        attackPoint = 10;
+    public Monster(int lifePoint, int attackPoint) {
+        this.attackPoint = attackPoint;
+        this.lifePoint = lifePoint;
     }
 
-    public int lifeGauge(int lifePoint) {
-        this.lifePoint = lifePoint;
+    public int lifeGauge() {
         return lifePoint;
     }
 
-    public int monsterAttack(int attackPoint) {
-        this.attackPoint = attackPoint;
+    public int monsterAttack() {
         return attackPoint;
     }
 
-    public void armeType(Armes lightening){
-
+    public void armeType(){
+        this.axe = axe;
+        this.lightening = lightening;
 
     }
+
+
+
+
+}
 
 
         // création de l'arme du sorcier
@@ -37,4 +46,4 @@ public class Monster {
             if (explorer.lifePoint < 0) {
                 break;*/
 
-}
+

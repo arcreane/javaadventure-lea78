@@ -9,9 +9,13 @@ public class Main {
         boolean runningTheGame;
 
         while(runningTheGame = true) {
+            System.out.println("---Welcome to the Coding Dungeon---");
+            System.out.println("###################################");
+            System.out.println("Let enter the dungeon"+"\n");
             Game myGame = new Game(5);
-            myGame.init();
+            Explorer Silaine = new Explorer(200,10);
             myGame.callAMonster();
+            break;
         }
 
     }

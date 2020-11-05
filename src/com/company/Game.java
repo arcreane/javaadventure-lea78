@@ -9,16 +9,11 @@ public class Game {
     Scanner scanInput = new Scanner(System.in);
 
 
-    void init(){
-        System.out.println("---Welcome to the Coding Dungeon---");
-        System.out.println("###################################");
-        System.out.println("Let enter the dungeon"+"\n");
-    }
 
     //constructor pour les 5 salles du donjon
     public Game(int totalNumbreOfRoom){
         roomArray = new DungeonRoom[totalNumbreOfRoom];
-        explorer = new Explorer(200,10);
+
 
     }
     /*Quand ennemy meurt => on change de salle
@@ -28,9 +23,24 @@ public class Game {
 
     }*/
     public void callAMonster(){
-        System.out.println("\t## A dark wizard is behind the door ##");
-        System.out.println("The dark wizard is launching a strike of lightning at you");
-        sorcerer.sorcererAttack(explorer);
+        System.out.println(" Behind the door is a dangerous monster!");
+        Monster monster = new Monster(20,10);
+        monster.monsterAttack();
+        monster.lifeGauge();
+
+        int typeOfMonster = (int)(Math.random()*2);
+        switch (typeOfMonster) {
+            case 0:
+                System.out.println("## A Barbarian is behind the door ##");
+                Armes axe = new Armes(10);
+                return;
+            case 1:
+                System.out.println("## A dark wizard is behind the door ##");
+                Armes lightening = new Armes(10);
+                return;
+            default:
+                break;
+        }
     }
 
 }
