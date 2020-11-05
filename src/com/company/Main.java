@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Game myGame = new Game(5);
         myGame.init();
+        myGame.callAMonster();
 
 
     }
