@@ -6,19 +6,19 @@ public class Game {
     DungeonRoom[] roomArray;
     Explorer explorer;
     Monster sorcerer;
-
-    public boolean runningTheGame;
+    Scanner scanInput = new Scanner(System.in);
 
 
     void init(){
         System.out.println("---Welcome to the Coding Dungeon---");
         System.out.println("###################################");
         System.out.println("Let enter the dungeon"+"\n");
-
     }
+
     //constructor pour les 5 salles du donjon
     public Game(int totalNumbreOfRoom){
         roomArray = new DungeonRoom[totalNumbreOfRoom];
+        explorer = new Explorer(200,10);
 
     }
     /*Quand ennemy meurt => on change de salle

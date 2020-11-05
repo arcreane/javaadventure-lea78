@@ -1,13 +1,23 @@
 package com.company;
 
 public class Explorer {
-    public int lifePoint;
+    int lifePoint;
+    int attackPoint;
 
-    public Explorer(){
-        lifePoint = 200;
+
+    public Explorer(int eLifePoint, int eAttackPoint) {
+        eLifePoint = lifePoint;
+        eAttackPoint = attackPoint;
     }
 
-    void attack(){
+    public int lifeGauge(int lifePoint){
+        this.lifePoint = lifePoint;
+        return lifePoint;
+    }
+
+
+    void attackAmount(int attackPoint){
+        this.attackPoint = attackPoint;
 
     }
 
