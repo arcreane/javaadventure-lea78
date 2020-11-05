@@ -10,7 +10,7 @@ public class Monster {
         lifePoint = 20;
     }
 
-    void SorcererAttack(Explorer explorer){
+    void sorcererAttack(Explorer explorer){
         // création de l'arme du sorcier
         Armes lighteningStrike = new Armes();
         //effet de l'arme + appel méthode attaque spéciale
