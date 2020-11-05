@@ -1,13 +1,10 @@
 package com.company;
 
-import java.util.Random;
 
 public class Monster {
     int lifePoint;
     int attackPoint;
-    Armes axe;
-    Armes lightening;
-    Random randTypeMonster = new Random();
+
 
 
     public Monster(int lifePoint, int attackPoint) {
@@ -22,20 +19,8 @@ public class Monster {
     public int monsterAttack() {
         return attackPoint;
     }
-
-    public void armeType(){
-        this.axe = axe;
-        this.lightening = lightening;
-
-    }
-
-
-
-
 }
 
-
-        // création de l'arme du sorcier
 
 
 
