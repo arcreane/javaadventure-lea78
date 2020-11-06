@@ -7,8 +7,9 @@ public class Explorer {
 
 
     public Explorer(int eLifePoint, int eAttackPoint) {
-        eLifePoint = lifePoint;
-        eAttackPoint = attackPoint;
+        this.lifePoint =eLifePoint;
+        this.attackPoint = eAttackPoint;
+
     }
 
     public int lifeGauge(int lifePoint){

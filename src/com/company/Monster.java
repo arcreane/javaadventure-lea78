@@ -7,16 +7,22 @@ public class Monster {
 
 
 
+
     public Monster(int lifePoint, int attackPoint) {
         this.attackPoint = attackPoint;
         this.lifePoint = lifePoint;
+        Armes lightening = new Armes(10);
     }
+
+    public Monster() {
+    }
+
 
     public int lifeGauge() {
         return lifePoint;
     }
 
-    public int monsterAttack() {
+    public int monsterAttack(Explorer explorer) {
         return attackPoint;
     }
 }

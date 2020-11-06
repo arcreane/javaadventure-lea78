@@ -6,6 +6,7 @@ public class Armes {
     int attackPoint;
     Random randCritick = new Random();
 
+
     // constructeur arme point d'attaque de base
     public Armes(int attackPoint){
         this.attackPoint = attackPoint;

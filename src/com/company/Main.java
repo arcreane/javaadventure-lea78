@@ -13,7 +13,6 @@ public class Main {
             System.out.println("###################################");
             System.out.println("Let enter the dungeon"+"\n");
             Game myGame = new Game(5);
-            Explorer Silaine = new Explorer(200,10);
             myGame.callAMonster();
             break;
         }
