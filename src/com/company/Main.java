@@ -12,8 +12,14 @@ public class Main {
             System.out.println("---Welcome to the Coding Dungeon---");
             System.out.println("###################################");
             System.out.println("Let enter the dungeon"+"\n");
-            Game myGame = new Game(5);
-            myGame.callAMonster();
+            Explorer explorer = new Explorer(200, 10);
+            DungeonRoom[] theDarkTower = new DungeonRoom[5];
+            Game mygame = new Game();
+
+            for (int i = 0; i < theDarkTower.length; i++) {
+                theDarkTower[i].openDoor(explorer);
+            }
+
             break;
         }
 

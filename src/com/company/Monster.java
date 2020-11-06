@@ -2,16 +2,16 @@ package com.company;
 
 
 public class Monster {
-    int lifePoint;
-    int attackPoint;
-
-
+   protected int lifePoint;
+   protected int dammage;
+   protected Armes arme;
 
 
     public Monster(int lifePoint, int attackPoint) {
-        this.attackPoint = attackPoint;
+        this.dammage = attackPoint;
         this.lifePoint = lifePoint;
         Armes lightening = new Armes(10);
+        lightening.lightningEffect();
     }
 
     public Monster() {
@@ -22,8 +22,10 @@ public class Monster {
         return lifePoint;
     }
 
-    public int monsterAttack(Explorer explorer) {
-        return attackPoint;
+    public void monsterAttack(Explorer explorer) {
+        /*explorer.lifePoint = explorer.lifePoint -
+        return dammage;}
+        */
     }
 }
 
