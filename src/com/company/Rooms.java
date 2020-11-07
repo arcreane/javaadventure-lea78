@@ -13,7 +13,7 @@ public class Rooms {
     //action quand une porte est ouverte = monstre attaque
     public void openDoor(Player hero) {
         while (hero.isAlive()&& monstre.isAlive()){
-            aleatoryMonster();
+            //aleatoryMonster();
             if (!monstre.attack(hero))
                 break;
 
@@ -21,7 +21,7 @@ public class Rooms {
                 break;
         }
     }
-    public void aleatoryMonster() {
+    /*public void aleatoryMonster() {
         int aleatory = (int) (Math.random() * 2);
         switch (aleatory) {
             case 0:
@@ -31,6 +31,6 @@ public class Rooms {
             default:
                 break;
         }
-    }
+    }*/
 
 }

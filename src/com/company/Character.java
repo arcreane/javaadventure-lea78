@@ -7,8 +7,7 @@ public class Character {
     public Character() {
 
     }
-
-    //condition être en vie
+    // condition être en vie
     public boolean isAlive() {
         return lifepoint > 0;
     }

@@ -2,14 +2,14 @@ package com.company;
 
 public class Player extends Character {
     Weapons Water_Flask;
-    Weapons Sword;
+    Sword sword;
 
 
     public Player(){
         Water_Flask = new Weapons();
-        Sword = new Weapons();
+        sword = (Sword) new Weapons();
         lifepoint = 200;
-        weapon= Sword;
+
     }
 
 
@@ -23,4 +23,5 @@ public class Player extends Character {
         }
         return isAlive();
     }
+
 }
