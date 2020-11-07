@@ -1,42 +1,31 @@
 package com.company;
 
+public class Monster extends Character{
 
-public class Monster {
-   protected int lifePoint;
-   protected int dammage;
-   protected Armes arme;
-
-
-    public Monster(int lifePoint, int attackPoint) {
-        this.dammage = attackPoint;
-        this.lifePoint = lifePoint;
-        Armes lightening = new Armes(10);
-        lightening.lightningEffect();
-    }
-
-    public Monster() {
+    public Monster(){
+        lifepoint = 20;
+        weapon = new Weapons();
     }
 
 
-    public int lifeGauge() {
-        return lifePoint;
-    }
+    //public boolean attack(Player hero) {
+     //   return hero.inflictDamage(weapon.getDamagePoint());
 
-    public void monsterAttack(Explorer explorer) {
-        /*explorer.lifePoint = explorer.lifePoint -
-        return dammage;}
-        */
+   // }
+
+    public boolean inflictDamage(int damagePoint) {
+        lifepoint-= damagePoint;
+        if (isAlive()){
+            System.out.println("\t## The monster lost : " + damagePoint + " life points!" +
+                    "\n That beast still has: " + lifepoint + " life points remaining!");
+
+        }else {
+            System.out.println("The monster is dead!\n " +
+                    "----------------------------------------------\n" +
+                    "\t## Enter the next room ##" +
+                    "\n----------------------------------------------");
+
+        }
+        return isAlive();
     }
 }
-
-
-
-
-        //effet de l'arme + appel méthode attaque spéciale
-        /*for (int i = 0; i < explorer.lifePoint; i++) {
-                explorer.lifePoint -= lighteningStrike.attackPoint;
-                lighteningStrike.lightningEffect();
-            if (explorer.lifePoint < 0) {
-                break;*/
-
-
