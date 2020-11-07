@@ -1,12 +1,16 @@
 package com.company;
 
 public class Barbarian extends Monster{
-    Weapons axe;
+Weapons axe;
 
 
     public Barbarian() {
-        super();
-        axe = weapon;
+        weapon = axe;
+
+    }
+    public boolean attack(Player hero) {
+        return hero.inflictDamage(weapon.getDamagePoint());
+
     }
     
 

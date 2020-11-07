@@ -9,10 +9,13 @@ public class Main {
         boolean runningTheGame;
 
         while(runningTheGame = true) {
+            Dungeon theDarkTower = new Dungeon();
+            Player Silaine = new Player();
             System.out.println("---Welcome to the Coding Dungeon---");
             System.out.println("###################################");
             System.out.println("Let enter the dungeon"+"\n");
-           
+            theDarkTower.visit(Silaine);
+
 
             break;
         }

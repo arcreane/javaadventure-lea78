@@ -8,9 +8,11 @@ public class Character {
 
     }
 
+    //condition être en vie
     public boolean isAlive() {
         return lifepoint > 0;
     }
+
     public boolean attack(Character charaBeingAttack) {
         return charaBeingAttack.inflictDamage(weapon.getDamagePoint());
     }

@@ -8,10 +8,7 @@ public class Monster extends Character{
     }
 
 
-    //public boolean attack(Player hero) {
-     //   return hero.inflictDamage(weapon.getDamagePoint());
 
-   // }
 
     public boolean inflictDamage(int damagePoint) {
         lifepoint-= damagePoint;
